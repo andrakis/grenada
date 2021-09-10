@@ -1,0 +1,17 @@
+{strict}
+<!DOCTYPE XHTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+<html>
+  <head>
+    {if:title}{:"<title>"}{:title}{:"</title>"}{/if}
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="{:CSS}styles.css" type="text/css" />
+    {if:head}{:head}{/if}
+  </head>
+  <body>
+      {if:content}
+        {:content}
+      {else}
+        {:"Page content missing."}
+      {/if}
+  </body>
+</html>
