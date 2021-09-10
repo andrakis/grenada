@@ -1,0 +1,30 @@
+<!DOCTYPE XHTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+<html>
+  <head>
+    {if:title}{:"<title>"}{:title}{:"</title>"}{/if}
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="{:CSS}styles.css" type="text/css" />
+    {if:head}{:head}{/if}
+  </head>
+  <body>
+      <div class="header">
+          <h1>Mass Worlds</h1>
+          <p>A multiverse simulator</p>
+      </div>
+      <div class="content">
+          <div id="topbar">{:topbar}</div>
+          <div id="main">
+            {if:content}
+                {:content}
+            {else}
+                {:"This page has not yet had content written"}
+            {/if}
+          </div>
+      </div>
+      <div class="clearfix"></div>
+      <div id="footer">
+          Copyright &copy; 2010 Julian Thatcher
+          {stats}
+      </div>
+  </body>
+</html>
